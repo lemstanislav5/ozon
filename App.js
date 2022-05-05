@@ -19,12 +19,12 @@ export default function App() {
             <View mt={10} flexErap='wrap' justifyContent='space-between'>
               {products.map((product, i) => (
                 <Box key={`product ${i}`} style={{width: '30%'}}>
-                  <Image
+                  <Image style={{ width: 200, height: 200, flex: 1, position: 'relative' }}
                     size='md'
-                    resizeMode="contain"
-                    resizeMethod="resize"
+                    resizeMode="cover"
                     source={{
-                      uri: 'https://el-koleso.ru/image/cache/catalog/tovary/velosipedy/150/150-12-800x600.jpg'
+                      uri: 'https://el-koleso.ru/image/cache/catalog/tovary/velosipedy/150/150-12-800x600.jpg',
+                      position: 'relative'
                     }}
                     alt={product.name}
                   />
